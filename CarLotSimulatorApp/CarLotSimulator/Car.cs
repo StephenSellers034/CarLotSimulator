@@ -3,7 +3,7 @@ namespace CarLotSimulator
 {
 	public class Car
 	{
-        private readonly int year;
+        
 
         public Car()
 		{
