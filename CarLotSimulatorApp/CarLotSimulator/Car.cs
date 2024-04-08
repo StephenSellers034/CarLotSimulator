@@ -1,13 +1,15 @@
 ﻿using System;
 namespace CarLotSimulator
 {
-	public class Car
+	public class Car 
 	{
-        
 
         public Car()
-		{
-		}
+        {
+            lot.numberOfCars++;
+        }
+
+        
 
 		public Car(int year, string make, string model, string enginenoise, string honknoise, bool isdriveable )
 		{
@@ -41,6 +43,8 @@ namespace CarLotSimulator
 		{
 			Console.WriteLine($"{Make}'s honk noise sounds like: {HonkNoise}");
 		}
+
+		
 
 	}
 

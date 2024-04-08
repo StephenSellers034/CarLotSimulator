@@ -7,6 +7,12 @@ namespace CarLotSimulator
         static void Main(string[] args)
         {
             //TODO
+            lot lot = new lot(); // Creating a instance
+
+            
+
+           
+
 
 
             //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
@@ -29,6 +35,9 @@ namespace CarLotSimulator
             myCar.MakeEngineNoise(myCar.EngineNoise);
             myCar.MakeHonkNoise();
 
+            
+            lot.ListOfCars.Add(myCar);
+
             List<int> myList = new List<int>() { 1, 2, 3, 4, 5, 6 };
 
             Car myCar1 = new Car()
@@ -43,7 +52,8 @@ namespace CarLotSimulator
             };
             myCar1.MakeEngineNoise(myCar1.EngineNoise);
             myCar1.MakeHonkNoise();
-
+            lot.ListOfCars.Add(myCar1);
+            
 
             Car myCar2 = new Car(2019, "Telsa", "Model 3", "Vroom vroom vrooom", "Honkkk", true);
 
@@ -58,14 +68,25 @@ namespace CarLotSimulator
 
             myCar2.MakeEngineNoise(myCar2.EngineNoise);
             myCar2.MakeHonkNoise();
+            lot.ListOfCars.Add(myCar2);
+            Console.WriteLine($"There are this many cars in the lot: {lot.numberOfCars}");
+            
 
+            foreach(Car item in lot.ListOfCars)
+            {
+                Console.WriteLine($"{item.Make} ");
+                Console.WriteLine($"{item.Model}");
+                Console.WriteLine($"{item.Year}");
+
+
+            }
             //*************BONUS*************//
 
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
 
             //*************BONUS X 2*************//
 
-            //Create a CarLot class
+            //Create a CarLot class done
             //It should have at least one property: a List of cars
             //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
