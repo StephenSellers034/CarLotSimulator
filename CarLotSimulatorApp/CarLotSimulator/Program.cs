@@ -7,7 +7,7 @@ namespace CarLotSimulator
         static void Main(string[] args)
         {
             //TODO
-            lot lot = new lot(); // Creating a instance
+            CarLot lot = new CarLot(); // Creating a instance
 
             
 
