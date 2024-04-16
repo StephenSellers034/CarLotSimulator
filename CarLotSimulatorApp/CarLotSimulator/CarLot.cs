@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 namespace CarLotSimulator
 {
-	public class lot 
+	public class CarLot 
 	{
-		public lot()
+		public CarLot()
 		{
 			numberOfCars++;
 		}
